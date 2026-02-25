@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant:wght@400;700&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-gold: #D4AF37;
+  --color-deep-navy: #0B0F2F;
+
+  --font-cinzel: 'Cinzel', serif;
+  --font-cormorant: 'Cormorant', serif;
+}
+
+body {
+  @apply bg-deep-navy text-white font-cormorant;
+  background-image: radial-gradient(circle at 20% 20%, rgba(212, 175, 55, 0.1), transparent 30%),
+                    radial-gradient(circle at 80% 70%, rgba(212, 175, 55, 0.1), transparent 30%);
+}
